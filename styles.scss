@@ -1,0 +1,147 @@
+// Variables
+$font1: "Montserrat", sans-serif;
+$font2: "Montserrat", sans-serif;
+$font-text: "Montserrat", sans-serif;
+$corporate-1: #db2777;
+$corporate-2: #3f3f42;
+
+body {
+  padding-bottom: 60px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  h1 {
+    font-size: 80px;
+    text-align: center;
+    padding: 40px;
+    font-family: $font1;
+    color: $corporate-2;
+    width: 800px;
+  }
+  i {
+    animation: moveDownUp 1s ease-in-out infinite;
+    color: $corporate-1;
+  }
+}
+@keyframes moveDownUp {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-item: center;
+  width: 1000px;
+  height: 400px;
+  margin: 0px auto;
+  background-color: #f8f8fa;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  width: 500px;
+  height: 400px;
+  animation-name: fade-in;
+  animation-duration: 9s;
+  animation-timing-function: normal;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.info {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-item: center;
+  padding: 10;
+  animation-name: fade-in;
+  animation-duration: 6s;
+  animation-timing-function: normal;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  h3 {
+    font-family: $font2;
+    font-weight: 700;
+    font-size: 12px;
+    color: $corporate-1;
+  }
+
+  h2 {
+    font-family: $font1;
+    font-weight: 700;
+    font-size: 50px;
+    color: $corporate-2;
+    padding: 0px 140px 0px 0px;
+    margin: 0px;
+  }
+  p {
+    font-family: $font-text;
+    font-weight: 300;
+    font-size: 16px;
+    padding-right: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+  width: 350px;
+  button {
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid $corporate-1;
+  }
+  a {
+    text-decoration: none;
+    color: $corporate-1;
+  }
+  i {
+    margin-left: 5px;
+  }
+}
+.button-read {
+  background-color: #fff;
+}
+.button-read:hover {
+  background-color: #db277825;
+}
+.button-promotion {
+  background-color: $corporate-1;
+  color: #fff;
+}
+.button-promotion:hover {
+  background-color: #db2778e3;
+}

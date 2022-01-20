@@ -1,0 +1,147 @@
+body {
+  padding-bottom: 60px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.main-container h1 {
+  font-size: 80px;
+  text-align: center;
+  padding: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: #3f3f42;
+  width: 800px;
+}
+.main-container i {
+  animation: moveDownUp 1s ease-in-out infinite;
+  color: #db2777;
+}
+
+@keyframes moveDownUp {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-item: center;
+  width: 1000px;
+  height: 400px;
+  margin: 0px auto;
+  background-color: #f8f8fa;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  width: 500px;
+  height: 400px;
+  animation-name: fade-in;
+  animation-duration: 9s;
+  animation-timing-function: normal;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-item: center;
+  padding: 10;
+  animation-name: fade-in;
+  animation-duration: 6s;
+  animation-timing-function: normal;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.info h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #db2777;
+}
+.info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #3f3f42;
+  padding: 0px 140px 0px 0px;
+  margin: 0px;
+}
+.info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding-right: 30px;
+  margin-bottom: 40px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+  width: 350px;
+}
+.btn-container button {
+  width: 150px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #db2777;
+}
+.btn-container a {
+  text-decoration: none;
+  color: #db2777;
+}
+.btn-container i {
+  margin-left: 5px;
+}
+
+.button-read {
+  background-color: #fff;
+}
+
+.button-read:hover {
+  background-color: #db277825;
+}
+
+.button-promotion {
+  background-color: #db2777;
+  color: #fff;
+}
+
+.button-promotion:hover {
+  background-color: #db2778e3;
+}
+
+/*# sourceMappingURL=styles.css.map */
